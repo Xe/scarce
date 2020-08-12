@@ -1,0 +1,21 @@
+[package]
+name = "scarce"
+version = "0.1.0"
+authors = ["Christine Dodrill <me@christine.website>"]
+edition = "2018"
+license = "0BSD"
+description = "An upload replicator for philomena boorus"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+furbooru = "0"
+job_scheduler = "1"
+sled = "0.34"
+structopt = "0"
+tokio = { version = "0.2", features = ["full"] }
+warp = "0"
+
+[dependencies.rusqlite]
+version = "0.21.0"
+features = ["bundled"]
